@@ -1,0 +1,306 @@
+\documentclass[12pt]{article}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\usepackage{color,soul}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tkz-tab}
+\author{\underline{Présentation Par:}\\Pathé BA}
+\title{\textbf{Intervalle et calcul Approché}}
+\date{\today}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+%This command takes a colour as an optional argument; the default colour is black.
+
+\newcommand{\myul}[2][black]{\setulcolor{#1}\ul{#2}\setulcolor{black}}
+\begin{document}
+\maketitle
+\newpage
+\begin{center}
+\underline{\textbf{\textcolor{red}{4°)Intervalles et Distances}}}\\
+\end{center}
+Soit deux points d'abscisse $x$ et A d'abscisse a.\\
+La distance entre $M$ et $A$ est notée:\\
+$AM=d(x;a)$ et définie par  $d(x;a)=\mid x-a \mid $\\
+$\blacktriangleright$Si $d(x;a)<b$ alors $x\in\left] a+b;a-b\right[ $
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{Preuve}}}\\
+\end{center}
+$\blacktriangleright$Si $d(x;a)>b$ alors $x\in \left( \left] -\infty; a-b\right[ \cup \left] a+b;+\infty\right[\right)$\\
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{Preuve}}}\\
+\end{center}
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{5°)Opération sur les intervalles:}}}\\
+\end{center}
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{a°)Centre-Rayon-Amplitude}}}\\
+\end{center}
+
+Soit un \textcolor{blue}{intervalle borné} de bornes a et b tels que a<b on a:\\
+$\blacktriangleright$ Le centre de l'intervalle est : $c =\frac{a+b}{2}$\\
+$\blacktriangleright$ Le rayon de l'intervalle est : $r =\frac{b-a}{2}$\\
+$\blacktriangleright$ L'amplitude de l'intervalle est : $e=b-a$
+\begin{center}
+\underline{\textbf{\textcolor{red}{Exemple}}}\\
+\end{center}
+Dans chaque cas, donne le rayon, le centre et l'amplitude:\\
+a°) $\left[-5;1\right] $ \\
+b°) $\left] 2,6 \right] $ \\
+\begin{center}
+\underline{\textbf{\textcolor{red}{Attention}}}\\
+\end{center}
+Les intervalles ...... n'ont ni rayon ni centre ni amplitude\\
+\begin{center}
+\underline{\textbf{\textcolor{red}{Exercice d'application}}}\\
+\end{center}
+Recopie et complète ce tableau ci-dessous\\
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  Valeur absolue & Distance & Intervalle & Inégalité \\
+  \hline
+  $|x-10| \leqslant 9$ & & & \\
+  \hline
+  & $d(x;2) >3$ & & \\
+  \hline
+  &  &$x \in[4;6]$ & \\
+  \hline
+  & & & $x \leqslant -2$ ou $x \geqslant 2$ \\
+  \hline
+\end{tabular}
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{b°)Réunion d'intervalles}}}\\
+\end{center}
+Soient I et J deux intervalles de $\mathbb{R}$. On appelle réunion des intervalle I et J, l'ensemble des éléments appartenant à I ou à J.\\
+On note: $I \cup J$ 
+\begin{center}
+\underline{\textbf{\textcolor{red}{Exemple}}}\\
+\end{center} 
+Soit $A=\left[ -2,5\right] $ et $B=\left[ -3, +\infty\right[ $\\
+Détermine $A \cup B$ 
+\begin{center}
+\underline{\textbf{\textcolor{red}{c°)Intersection d'intervalles}}}\\
+\end{center}
+On appelle intersection des intervalles I et J, l'ensemble des élément appartenant à la fois à I et J .\\
+On note $I \cap J$
+\begin{center}
+\underline{\textbf{\textcolor{red}{Exemple}}}\\
+\end{center} 
+En Considérant l'exemple précédent, dtermine $A \cap B$
+\begin{center}
+\underline{\textbf{\textcolor{red}{V.Encadrement et Ordre}}}\\
+\end{center}
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{1.Définition}}}\\
+\end{center}
+Le nombre x est encadré par deux réels a et b lorsque :\\
+$a\leqslant x \leqslant b$ \\
+Cette inégalité est appelé encadrement du réel x à b-a près
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{Exemple}}}\\
+\end{center}
+Encadrer à $10^{-3}$ près $\sqrt{3}$\\
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{2°)Encadrement et opération}}}
+\end{center}
+
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{a°)Propriétés}}}
+\end{center}
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{b°)Encadrement d'une somme et d'une différence}}}\\
+\end{center}
+
+Soit $x$ et $y$ tels que $a<x<b$ et $c<y<d$ avec $a>0,b>0,c>0$ et $d>0$ on a:\\
+\textbf{\textcolor{red}{$\circledast$ Encadrement de $x+y$}}\\
+$a<x<b$\\
+$+$\\
+$c<y<d$\\
+En faisant la somme membre à menbre, on a:\\
+$a+c<x+y<b+d$\\
+\textbf{\textcolor{red}{$\circledast$ Encadrement de $x-y$}}\\
+On encadre d'abord $-y$.
+ainsi, $c<y<d \Rightarrow -d<-y<-c$ \\
+Donc \\
+$a<x<b$\\
+$-d<-y<-c$\\
+En faisant la somme membre à menbre, on a:\\
+$a-d<x-y<b-c$
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{c°)Encadrement d'un produit et d'un quotient}}}\\
+\end{center}
+Soit deux réels $x$ et $y$ tels que $a<x<b$ et $c<y<d$ \\
+\textbf{\textcolor{red}{$\circledast$ Encadrement de $x \times y$}}\\
+$\blacktriangleright$ Si $a>0,b>0,c>0$ et $d>0$ alors,\\
+$a<x<b$\\
+$\times$\\
+$c<y<d$\\
+En faisant le produit membre à menbre, on a:\\
+$a\times c <x\times y <b\times d$\\
+\\
+$\blacktriangleright$ Si $a>0,b>0,c<0$ et $d<0$ on a,\\
+$c<y<d \Rightarrow -d<-y<-c$\\
+donc\\
+$a<x<b$\\
+$\times$\\
+$-d<-y<-c$\\
+En faisant le produit membre à menbre, on a:\\
+$-a\times d <-x\times y <-b\times c$\\
+\textbf{\textcolor{red}{$\circledast$ Encadrement de $\frac{x}{y}$}}\\
+Soit $a>0,b>0,c>0$ et $d>0$  \\
+Dans ce cas, on encadre d'abord $\frac{1}{y}$ puis $x\times\frac{1}{y}$\\
+Ainsi, on a $c<y<d \Rightarrow \frac{1}{d}<\frac{1}{y}<\frac{1}{c}$
+\\
+$\frac{1}{d}<\frac{1}{y}<\frac{1}{c}$\\
+$\times$\\
+$a<x<b$\\
+Donc $\frac{a}{d}<\frac{x}{y}<\frac{b}{c}$\\
+\begin{center}
+\underline{\textbf{\textcolor{red}{Exercice d'application }}}\\
+\end{center}
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{Résolution}}}\\
+\end{center}
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{VI.Valeur approchée - notation scientifique}}}\\
+\end{center} 
+\begin{center}
+\underline{\textbf{\textcolor{red}{1.Définitions }}}\\
+\end{center}
+$\blacktriangleright$On dit que a est une valeur approchée de x à $\varepsilon$ près si et seulement si 
+$a-\varepsilon\leqslant x \leqslant a+\varepsilon$\\ c'est-à-dire $\mid x-a \mid \leqslant\varepsilon$\\
+$\blacktriangleright$ On dit que a est une valeur approchée par défaut de $x$ à $\varepsilon$ près si, et seulement si,\\ $a \leqslant x \leqslant a+\varepsilon$ \\
+\\
+$\blacktriangleright$On dit que a est une valeur approchée par excès de x à $\varepsilon$ près si, et seulement si,\\
+$a-\varepsilon\leqslant x \leqslant a$
+\begin{center}
+\underline{\textbf{\textcolor{red}{Exemple}}}\\
+\end{center} 
+1) Donner un encadrement de x dans les cas suivants :\\
+a) 75,12 est une valeur approchée à $10^{-1}$ près de x\\
+a) 75,12 est une valeur approchée à $10^{-2}$ près de x\\
+a) 75,12 est une valeur approchée à $7.10^{-2}$ près de x\\
+2) Donner un encadrement de $x-y$; $xy$ sachant que $3,23$ est une valeur approchée de 
+$x$ à $0,1$ près et $-5\leqslant y \leqslant -2$.\\
+\begin{center}
+\underline{\textbf{\textcolor{red}{Solution}}}\\
+\end{center}
+1)\\a)
+\\
+$75,12-0,1\leq x \leq 75,12+0,1$\\
+$75,02\leq x \leq 75,22$\\
+\\
+b)\\
+$75,12-0,01\leq x \leq 75,12+0,01$\\
+$75,\leq x \leq 75,13$\\
+\\
+c)\\
+$75,12-0,07\leq x \leq 75,12+0,07$\\
+$75,\leq x \leq 75,$\\
+\\
+2)\\
+Puisque $3,23$ est une valeur approchée de 
+$x$ à $0,1$ près, on a:\\
+$3,23-0,1\leq x \leq 3,23+0,1$\\
+\underline{\textcolor{red}{$3,13\leq x \leq 3,33$}}\\
+\\
+Encadrons -y, on a\\
+$-5\leqslant y \leqslant -2 \Longrightarrow$ \underline{\textcolor{red}{$2\leqslant -y \leqslant 5$}}\\
+\\
+On a: \\
+$75,12-0,1\leq x \leq 75,12+0,1$\\
+$75,02\leq x \leq 75,22$\\
+$\ast x-y$\\
+\textcolor{red}{$\ast x-y$}\\
+$3,13\leq x \leq 3,33$\\
++\\
+$2\leqslant -y \leqslant 5$\\
+$3,13+2\leq x-y \leq 3,33+5$\\
+\textcolor{red}{$\ast x \times y$}\\
+$3,13\leq x \leq 3,33$\\
+$\times$\\
+$2\leqslant -y \leqslant 5$\\
+$3,13\times2 \leq -xy \leq 3,33\times5$\\
+\\
+\underline{\textbf{\textcolor{red}{Partie Entière}}}\\
+$\forall x \in \mathbb{R}$  il existe un entier relatif ($b \in \mathbb{Z}$) et un seul tel que $b \leq x \leq b+1$\\ $b$  s'appelle la partie entière de $x$. On note $E(x)=b$\\
+\underline{\textbf{\textcolor{red}{Approximation décimale }}}\\
+Soit $x$ un réel, $n \in \mathbb{N}$, $b$ la partie entière de $x$.$10^{n}$ alors\\
+$b.10^{-n} \leq x \leq (b+1)10^{-n}$\\
+est un encadrement de $x$ à $10^{-n}$ près.\\
+$b.10^{-n}$  est appelé approximation décimale de $x$.
+\begin{center}
+\underline{\textbf{\textcolor{red}{Exemple}}}\\
+\end{center}
+Soit 
+$x=3,124124124124$, donner une approximation de $x$ à l'ordre $3$.
+\begin{center}
+\underline{\textbf{\textcolor{red}{Solution}}}\\
+\end{center}
+On a :\\
+$ x.10^{3}=3124,124124124 \Longrightarrow E(x.10^{3})=3124 $\\
+$ \Longrightarrow 3124 \leq x.10^{3} \leq 3125 $\\
+$ \Longrightarrow 10^{-3}\times 3124 \leq x.10^{3} \times 10^{-3} \leq 3125 \times 10^{-3}$\\
+$ \Longrightarrow 3,124 \leq x \leq 3,125 $\\
+$3,124$ est donc une approximation décimale de $x$ à l'ordre $3$.
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{Arrondi}}}\\
+\end{center} 
+Soit un nombre réel à plus de n chiffres après la virgule, l'arrondi d'ordre n de x est le décimal dont :\\
+$\blacktriangleright$ Si le $n^{ième}$ chiffre est égal à lui-même si le $n^{ième}$ chiffre+1 $\in$ à $\left\lbrace 0;1;2;3;4 \right\rbrace $\\
+$\blacktriangleright$ Si le $n^{ième}$ est ègal au $n^{ième}$ chiffre+1 si le $n^{ième}$ chiffre+1 $\in$ à $\left\lbrace 5;6;7;8;9 \right\rbrace $\\
+\begin{center}
+\underline{\textbf{\textcolor{red}{Exemple}}}\\
+\end{center} 
+Soit $x=4,02370956$\\
+Donne l'arrondi d'ordre $0$ de $x$, l'arrondi d'ordre $2$ de $x$, l'arrondi d'ordre $3$ de $x$, l'arrondi d'ordre $5$ de $x$\\
+\begin{center}
+\underline{\textbf{\textcolor{red}{Solution}}}\\
+\end{center}
+l'arrondi d'ordre $0$ de $x$ : est $4$\\
+l'arrondi d'ordre $2$ de $x$ : est $4,023$\\
+l'arrondi d'ordre $3$ de $x$ : est $4,0237$\\
+l'arrondi d'ordre $5$ de $x$ : est $4,02371$\\
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{Notation scientifique}}}\\
+\end{center} 
+La notation scientifique d'un nombre réel $x$ est l'écriture de $x$ sous la forme 
+$a.10^{p}$ où 
+$1 \leq a \leq 10$ et $p \in \mathbb{Z}.$\\
+
+\begin{center}
+\underline{\textbf{\textcolor{red}{Exemple}}}\\
+\end{center} 
+On donne les écritures scientifiques de $254 ; 6000; 0,0064 ; 29,77$\\
+On a : \\
+$2543=2,543.10^{3} ; 6000=6.10^{3}$\\
+$0,0064=6,4.10^{-3} ; 29,77=2,977.10^{1}$
+\begin{center}
+\underline{\textbf{\textcolor{red}{Solution}}}\\
+\end{center}
+\end{document}
