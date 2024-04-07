@@ -1,0 +1,213 @@
+\documentclass[12pt]{article}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\usepackage{color,soul}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{systeme}
+% \usepackage{tkz-tab} % Commenté car non utilisé dans ce document
+\author{Destiné à la $2^{nde}S$\\Au Lycée de Dindéferlo}
+\title{\textbf{Nombres Complexes}}
+\date{\today}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\usepackage[a4paper,left=20mm,right=20mm,top=15mm,bottom=15mm]{geometry}
+\usepackage{mathtools}
+\usepackage{systeme}
+\usetikzlibrary{arrows.meta}
+\newcommand{\myul}[2][black]{\setulcolor{#1}\ul{#2}\setulcolor{black}}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\DecimalMathComma
+\begin{document}
+\maketitle
+\newpage
+
+\section*{\textcolor{red}{\textbf{I. Notation de Vecteur}}}
+\section*{\textcolor{red}{\textbf{1)Définition:}}}
+
+Un vecteur est segment orienté representer par une ou deux lettres et surmonté d'une flêche.
+
+\begin{tikzpicture}
+  % Définir les points A et B
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (2,3);
+
+  % Dessiner le vecteur AB
+  \draw[->, >=Stealth, thick] (A) -- (B) node[midway, above] {$\vec{u}$};
+  \draw[->, >=Stealth, thick] (A) -- (B) node[midway, below] {$\vec{AB}$};
+  % Marquer les points A et B
+  \node[below left] at (A) {$A$};
+  \node[above right] at (B) {$B$};
+\end{tikzpicture}
+
+\section*{\textcolor{red}{\textbf{2)Caractéristique d'un vecteur:}}}
+
+Un vecteur est caractérisé par:\\
+
+\begin{itemize}
+  \item \textbf{Sa Direction :} c'est la droite qui supporte le vecteur : (AB).
+  \item \textbf{Son Sens :} de l'origine vers l'extrémité : de A vers B.
+  \item \textbf{Sa Norme :} c'est la distance AB.
+\end{itemize}
+
+\section*{\textcolor{red}{\textbf{Remarque:}}} 
+\section*{\textcolor{red}{\textbf{2)Caractéristique d'un vecteur:}}}
+\begin{itemize}
+  \item Toute droite parallèle à la direction d'un vecteur est également considérée comme sa direction. Ainsi, dans ce cas, on dit qu'un vecteur admet une infinité de directions.
+  \item Lorsque l'origine et l'extrémité d'un vecteur coïncident, on dit que le vecteur est nul, et on le note par $\vec{O}$.
+\end{itemize}
+\section*{\textcolor{red}{\textbf{3)Egalité vectorielle:}}}
+\section*{\textcolor{red}{\textbf{a)Définition:}}}
+On dit que deux vecteurs sont égaux lorsqu'ils ont la même direction, le même sens et la même norme.
+\section*{\textcolor{red}{\textbf{Exemple:}}} 
+ABCD est un parallélogramme de centre O. I et J les milieux respectifs des [AB] et [CD]\\
+1)Détermine tous les vecteurs égaux à $\vec{BI}$\\
+2)Donner une direction de $\vec{BI}$\\
+3)Détermine la direction, le sens et la norme de $\vec{DO}$\\
+\section*{\textcolor{red}{\textbf{Solution:}}}
+
+\begin{tikzpicture}
+  % Définir les sommets du parallélogramme
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (2,0);
+  \coordinate (C) at (3,2);
+  \coordinate (D) at (1,2);
+
+  % Dessiner les côtés du parallélogramme
+  \draw (A) -- (B) -- (C) -- (D) -- cycle;
+
+  % Marquer les sommets A, B, C, D
+  \foreach \point in {A, B, C, D} {
+    \node[circle, fill, inner sep=1.5pt, label=below:\textcolor{blue}{$\point$}] at (\point) {};
+  }
+\end{tikzpicture}
+\section*{\textcolor{red}{\textbf{b)Propriété relative au parallélogramme:}}}
+ABCD est un parallélogramme si et seulement si l'une des relations suivantes est vérifiée :
+
+\begin{enumerate}
+  \item $\vec{AB} = \vec{DC}$.
+  \item $\vec{AD} = \vec{BC}$.
+  \item Les droites (AB) et (DC) sont parallèles, et les droites (AD) et (BC) sont parallèles.
+  \item Les segments [BD] et [AC] se coupent en leur milieu.
+\end{enumerate}
+\section*{\textcolor{red}{\textbf{II)Addition de deux vecteurs:}}}
+Soit deux vecteur non nuls $\vec{u}$ et $\vec{v}$, tels que $\vec{u}=\vec{AB}$ et $\vec{v}=\vec{CD}$ Construisons.\\ $\vec{u}+\vec{v}$\\
+\\
+\begin{tikzpicture}
+  % Dessiner les vecteurs
+  \draw[->, >=Stealth, thick] (0,0) -- (2,1) node[midway, below left] {$\vec{u}$};
+  \draw[->, >=Stealth, thick] (0,2) -- (2,2) node[midway, below right] {$\vec{v}$};
+\end{tikzpicture}
+
+\section*{\textcolor{red}{\textbf{1)La Relation de Chasles:}}}
+
+La relation de Chasles est une propriété fondamentale des vecteurs. Elle énonce que pour trois points non alignés \(A\), \(B\), et \(C\), le vecteur \(\vec{AB}\) suivi du vecteur \(\vec{BC}\) est équivalent au vecteur \(\vec{AC}\). Mathématiquement, cela s'exprime comme suit :
+
+\[
+\vec{AB} + \vec{BC} = \vec{AC}
+\]
+
+Cette relation peut également être visualisée graphiquement.
+
+\subsection*{Visualisation Graphique}
+
+[[Considérons trois points non alignés \(A\), \(B\), et \(C\). La flèche \(\vec{AB}\) représente le vecteur allant de \(A\) à \(B\), et la flèche \(\vec{BC}\) représente le vecteur allant de \(B\) à \(C\). En plaçant la queue de \(\vec{BC}\) à la tête de \(\vec{AB}\), on obtient une flèche qui représente le vecteur \(\vec{AC}\).]]
+
+\begin{center}
+\begin{tikzpicture}
+  % Définir les coordonnées des points
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (2,1);
+  \coordinate (C) at (4,3);
+
+  % Dessiner les vecteurs
+  \draw[->, >=Stealth, thick] (A) -- (B) node[midway, below left] {$\vec{AB}$};
+  \draw[->, >=Stealth, thick] (B) -- (C) node[midway, below right] {$\vec{BC}$};
+  \draw[->, >=Stealth, thick] (A) -- (C) node[midway, above] {$\vec{AC}$};
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Propriétés de la Relation de Chasles}
+
+La relation de Chasles possède plusieurs propriétés intéressantes :
+
+\begin{itemize}
+  \item \textbf{Additivité :} Pour tout point \(D\), \(\vec{AB} + \vec{BC} + \vec{CD} = \vec{AD}\).
+  \item \textbf{Inversion :} \(\vec{AB} = -\vec{BA}\).
+  \item \textbf{Annulation :} Si \(A = B\), alors \(\vec{AB} = \vec{0}\), le vecteur nul.
+\end{itemize}
+
+[[La relation de Chasles est un outil puissant dans la manipulation des vecteurs et joue un rôle clé dans divers domaines des mathématiques et de la physique.]]
+\section*{\textcolor{red}{\textbf{2)Somme de deux vecteurs:}}}
+Soient $\vec{u}$ et $\vec{v}$ deux vecteurs du plan.
+\subsection*{Cas 1 : Même Origine}
+
+\textcolor{yellow}{Dans le cas où les vecteurs ont la même origine, la somme vectorielle est simplement la flèche reliant l'origine au point final du deuxième vecteur.}
+\begin{center}
+\begin{tikzpicture}[scale=2]
+  % Vecteur 1 (en rouge)
+  \draw[red, thick, ->] (0,0) -- (1.5,1) node[midway, above left] {$\mathbf{v}_1$};
+  
+  % Vecteur 2 (en bleu)
+  \draw[blue, thick, ->] (0,0) -- (-1,1.5) node[midway, below right] {$\mathbf{v}_2$};
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{tikzpicture}[scale=2]
+  % Vecteur (en rouge)
+  \draw[red, thick, ->] (0,0) -- (1.5,1) node[midway, above left] {$\mathbf{v}$};
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Cas 2 : Origines Différentes}
+
+\textcolor{yellow}{Lorsque les vecteurs ont des origines différentes, la somme vectorielle est obtenue en les plaçant bout à bout, c'est-à-dire en ajoutant la tête du premier vecteur à la queue du deuxième vecteur.}
+\begin{center}
+\begin{tikzpicture}[scale=2]
+  % Vecteur original (en rouge)
+  \draw[red, thick, ->] (0,0) -- (1.5,) node[midway, above left] {$\mathbf{v}$};
+  
+  % Vecteur représentatif (en bleu)
+  \draw[blue, thick, ->] (1.5,1) -- (3,2) node[midway, above left] {$\mathbf{v}$};
+\end{tikzpicture}
+Compilation rapide
+\end{center}
+\begin{center}
+\begin{tikzpicture}[scale=2]
+  % Vecteur u (en rouge)
+  \draw[red, thick, ->] (0,0) -- (1.5,1) node[midway, above left] {$\mathbf{u}$};
+  
+  % Vecteur v (en bleu)
+  \draw[blue, thick, ->] (0,0) -- (-1.9,-2) node[midway, below right] {$\mathbf{v}$};
+  
+  % Annotation v+u sur le vecteur v
+  \node[above left] at (-0.75,-0.5) {$\vec{v} + \vec{u}$};
+\end{tikzpicture}
+\end{center}
+\section*{\textcolor{red}{\textbf{II.Construire une combinaison linéaire de vecteurs.}}}
+\section*{\textcolor{red}{\textbf{2.1. Décomposer un vecteur à l’aide de la relation de Chasles}}}
+
+\textcolor{red}{\textbf{2.2 Définition}}
+
+\textcolor{red}{\textbf{2.3 Exemple}}
+
+\textcolor{red}{\textbf{2.4 Propriétés}}
+
+\textcolor{red}{\textbf{Exemple}}
+
+\section*{\textcolor{red}{\textbf{III. Passer de la relation vectorielle $\vec{AC}=\lambda \vec{AB}$ à la relation algébrique $\vec{AC}=|\lambda|\vec{AB}$}}}
+\section*{\textcolor{red}{\textbf{IV. Utiliser les relations vectorielles pour démontrer des propriétés géométriques
+( distance, alignement, milieu, parallélisme)}}}
+\end{document}
