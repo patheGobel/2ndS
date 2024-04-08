@@ -31,14 +31,87 @@
 \begin{document}
 \maketitle
 \newpage
-\section*{\underline{\textbf{\textcolor{red}{I.Trinome Du second degré}}}}
-\subsection*{\underline{\textbf{\textcolor{red}{1.Forme canonique}}}}
-\subsection*{\underline{\textbf{\textcolor{red}{2.Factorisation de la forme canonique}}}}
+\section*{\underline{\textbf{\textcolor{red}{I.Trinôme du second degré}}}}
+\subsection*{\underline{\textbf{red}{1. Définition}}}
+On appelle trinôme du second degré, toute expression de la forme
+
+$ ax^{2}+bx+c $; $a$, $b$ et $c$ $\in \mathbb{R}$; $\neq 0 $
+\subsection*{\underline{\textbf{\textcolor{red}{2.Forme canonique}}}}
+Soit $f(x)= ax^{2}+bx+c $ avec $\neq 0$. On a:
+\[f(x)=a\left[ x^{2}+\frac{b}{a}x+\frac{c}{a}\right] \] or 
+\[x^{2}+\frac{b}{a}x=\left( x+\frac{b}{2a}\right) ^{2}-\frac{b^{2}}{4a^{2}}\]
+Donc, \[f(x)=a\left[\left( x+\frac{b}{2a}\right) ^{2}-\frac{b^{2}}{4a^{2}}+\frac{c}{a}\right] \] 
+\[f(x)=a\left[\left( x+\frac{b}{2a}\right) ^{2}-\left( \frac{b^{2}-4ac}{4a^{2}}\right) \right] \]
+Ainsi, la forme canonique de $f(x)$ est donnée par \[f(x)=a\left[\left( x+\frac{b}{2a}\right) ^{2}-\left( \frac{b^{2}-4ac}{4a^{2}}\right) \right] \]
+
+En posant $\Delta = b^{2}-4ac $ on a:
+\[ f(x)=a \left[ \left(x+\frac{b}{2a}\right)^{2}-\frac{\Delta}{4a^{2}} \right] \]
+\subsection*{\underline{\textbf{\textcolor{red}{Exercice d'application}}}}
+Déterminer les formes canoniques de 
+\[f(x)=3x^{2}-4x+5\]
+\[f(x)=-2x^{2}-7x-9\]
+\[f(x)=x^{2}-6x+7\]
+\[f(x)=-x^{2}+6x-5\]
+\subsection*{\underline{\textbf{\textcolor{red}{3.Factorisation de la forme canonique}}}}
+\begin{itemize}
+\item \textbf{Si $\Delta > 0 $}
+
+\[f(x)=a\left[\left( x+\frac{b}{2a}\right)^{2}-\frac{\Delta}{4a^{2}}\right] \]
+\[f(x)=a\left[\left( x+\frac{b}{2a}\right)^{2}-\left( \frac{\sqrt{\Delta}}{2a}\right)^{2} \right]\]
+\[f(x)=a\left( x+\frac{b}{2a}-\frac{\sqrt{\Delta}}{2a}\right)\left( x+\frac{b}{2a}+\frac{\sqrt{\Delta}}{2a}\right)\]
+\[
+\textcolor{red}{
+f(x)=a\left(x+\frac{b-\sqrt{\Delta}}{2a} \right)\left(x+\frac{b+\sqrt{\Delta}}{2a} \right)
+}
+\]
+
+\item \textbf{Si $\Delta < 0 $}, le trinôme n'est pas factorisable
+
+\item \textbf{Si $\Delta = 0 $} alors \[f(x)=a\left( x+\frac{b}{2a}\right)^{2}\] 
+\[\textcolor{red}{
+f(x)=a\left( x+\frac{b}{2a}\right) \left( x+\frac{b}{2a}\right)
+}
+\]
+\end{itemize}
 \section*{\underline{\textbf{\textcolor{red}{II.Equation second degré}}}}
 \subsection*{\underline{\textbf{\textcolor{red}{1.Résolution de l'équation $ax^{2}+bx+c=0$}}}}
 \subsection*{\underline{\textbf{\textcolor{red}{Théorème1}}}}
+Pour résoudre l'équation $ax^{2}+bx+c=0$, on cherche $\Delta$ avec $\Delta=b^{2}-4ac$.
+Trois cas se présentent\\
+\begin{itemize}
+\item Si $\Delta >0$ alors
+$ax^{2}+bx+c=0 \Leftrightarrow a\left(x+\frac{b-\sqrt{\Delta}}{2a} \right)\left(x+\frac{b+\sqrt{\Delta}}{2a} \right)=0$
+Comme $\neq 0$ alors 
+
+$ \left(x-\frac{b-\sqrt{\Delta}}{2a} \right)=0$ ou 
+$\left(x+\frac{b+\sqrt{\Delta}}{2a} \right)=0$
+
+$x=\frac{-b+\sqrt{\Delta}}{2a}$ ou $x=\frac{-b-\sqrt{\Delta}}{2a}$
+
+On note $x_{1}=\frac{-b-\sqrt{\Delta}}{2a}$, $x_{2}=\frac{-b+\sqrt{\Delta}}{2a}$
+
+Ainsi, $S=\left\lbrace \frac{-b-\sqrt{\Delta}}{2a}, \frac{-b+\sqrt{\Delta}}{2a} \right\rbrace $
+\item Si $\Delta < 0$ alors Pas de factorisatrion de $S=\emptyset$
+\item Si $\Delta = 0$ alors 
+
+$\left( x+\frac{b}{2a}\right)^{2}=0$
+
+$\Leftrightarrow \left( x+\frac{b}{2a}\right) \left( x+\frac{b}{2a}\right)=0$ 
+
+$\Leftrightarrow x=-\frac{b}{2a}$ ou $x=-\frac{b}{2a}$.
+l'équation admet une solution double notée $x_{0}=-\frac{b}{2a}$
+
+$ S = \left\lbrace -\frac{b}{2a} \right\rbrace  $
+\end{itemize}
 $\ast$\underline{\textbf{\textcolor{red}{Exemple}}}\\
 \subsection*{\underline{\textbf{\textcolor{red}{Théorème2}}}}
+Soit l'équation $ax^{2}+bx+c=0$ et $b=2b'$ donc $\Delta'=b'^{2}-ac$
+$\Delta'$ est appelé discriminant réduit.
+\begin{itemize}
+    \item Si $Delta' >0$ alors on aura 2 racines distinctes $x_{1}$ et $x_{2}$ tels que:
+            \[x_{1}=\frac{-b'-\sqrt{\Delta'}}{a}\] et \[x_{2}=\frac{-b'+\sqrt{\Delta'}}{a}\]
+            Ainsi $S=\left\lbrace \frac{-b'-\sqrt{\Delta'}}{a}, \frac{-b'+\sqrt{\Delta'}}{a} \right\rbrace$
+        \end{itemize}
 $\ast$\underline{\textbf{\textcolor{red}{Exemple}}}\\
 \subsection*{\underline{\textbf{\textcolor{red}{Théorème3}}}}
 $\ast$\underline{\textbf{\textcolor{red}{Exemple}}}\\
