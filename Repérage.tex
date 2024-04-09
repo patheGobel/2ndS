@@ -1,0 +1,373 @@
+\documentclass[12pt]{article}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\usepackage{color,soul}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{systeme}
+% \usepackage{tkz-tab} % Commenté car non utilisé dans ce document
+\author{Destiné à la $2^{nde}S$\\Au Lycée de Dindéferlo}
+\title{\textbf{Chapitre III: Repère cartésien}}
+\date{\today}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\usepackage[a4paper,left=20mm,right=20mm,top=15mm,bottom=15mm]{geometry}
+\usepackage{mathtools}
+\usepackage{systeme}
+\usetikzlibrary{arrows.meta}
+\newcommand{\myul}[2][black]{\setulcolor{#1}\ul{#2}\setulcolor{black}}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\DecimalMathComma
+\begin{document}
+\maketitle
+\newpage
+
+\section*{\underline{\textcolor{red}{\textbf{I. Repères}}}}
+\subsection*{\underline{\textcolor{red}{\textbf{1.Repère de la droite}}}}
+\subsection*{\underline{\textcolor{red}{\textbf{2.Définition}}}}
+On appelle repère de la droite la donnée d'une droite $(\mathfrak{D})$, d'un point O appartenant à la droite $(\mathfrak{D})$ et d'un vecteur $\vec{i}$ non nul ayant pour direction la droite $(\mathfrak{D})$\\
+\definecolor{ffqqtt}{rgb}{1,0,0.2}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-9.546585365853664,-5.016536585365853) rectangle (7.098292682926826,4.7342926829268315);
+\draw [line width=2pt] (-5.65,3.35)-- (1.97,-1.49);
+\draw [->,line width=2pt,color=ffqqtt] (-2.0957454902442016,1.092442017425451) -- (-2.933468597373911,1.6245391090931405);
+\begin{scriptsize}
+\draw[color=black] (-0.12629268292683377,0.5199512195121967) node {$D$};
+\draw [fill=xdxdff] (-2.0957454902442016,1.092442017425451) circle (2.5pt);
+\draw[color=xdxdff] (-2.4164390243902485,0.7088292682926846) node {$O$};
+\end{scriptsize}
+\end{tikzpicture}
+
+La repére de la droite $(\mathfrak{D})$ est noté: $\mathfrak{D}(O;\vec{i})$
+
+Avec O l'origine du repère et le vecteur $\vec{i}$ la base de ce repère
+$\mathfrak{D}(O;\vec{i})$
+\subsection*{\underline{\textcolor{red}{\textbf{a.Abscisse:}}}}
+Soit un repère de la droite $\mathfrak{D}(O;\vec{i})$ pour tout point M de la droite $(\mathfrak{D})$, il existe un et un seul réel $x$ tel que $\vec{OM}=x\vec{i}$
+Le réel $x$ est 	appelé alors \textcolor{red}{abscisse} du point M dans le repère $\mathfrak{D}(O;\vec{i})$ noté $x_{M}$
+
+\underline{\textcolor{red}{\textbf{Exemple}}}
+
+\definecolor{ffqqtt}{rgb}{1,0,0.2}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-9.95815063414635,-6.114224975609752) rectangle (10.524965463414636,5.68427843902439);
+\draw [line width=2pt] (-5.65,3.35)-- (1.97,-1.49);
+\draw [->,line width=2pt,color=ffqqtt] (-2.0957454902442016,1.092442017425451) -- (-2.933468597373911,1.6245391090931405);
+\begin{scriptsize}
+\draw[color=black] (0.29769131707316904,1.1562813658536601) node {$D$};
+\draw [fill=xdxdff] (-2.0957454902442016,1.092442017425451) circle (2.5pt);
+\draw[color=xdxdff] (-2.5019535609756134,0.6134930731707335) node {$O$};
+\draw [fill=xdxdff] (-3.6966339387215585,2.109279299660413) circle (2.5pt);
+\draw[color=xdxdff] (-3.4732589268292724,2.727510634146343) node {$C$};
+\draw [fill=xdxdff] (-4.967225290138013,2.916321575363252) circle (2.5pt);
+\draw[color=xdxdff] (-4.730242341463419,3.5274091707317083) node {$E$};
+\draw [fill=xdxdff] (-1.2071681826623075,0.5280438325571613) circle (2.5pt);
+\draw[color=xdxdff] (-0.987859902439027,1.1562813658536601) node {$F$};
+\draw [fill=xdxdff] (-0.16406728513245916,-0.13450319422032775) circle (2.5pt);
+\draw[color=xdxdff] (0.06914887804877864,0.4706540487804897) node {$G$};
+\end{scriptsize}
+\end{tikzpicture}
+
+Déterminer les abscises des points $O$, $C$, $E$, $F$, $G$ sachant que la droite est regulièrement graduée
+\subsection*{\underline{\textcolor{red}{\textbf{Solution}}}}
+$x_{D}=?$
+\subsection*{\underline{\textcolor{red}{\textbf{c.Mesure algébrique}}}}
+Soit $(\mathfrak{D})$ une droite munie d'un repère $(O;\vec{i})$ et A et B deux points de la droite $(\mathfrak{D})$.
+
+On appelle mesure algébrique du bipoint $(A;B)$ ou du vecteur $\vec{AB}$, le réel noté par: 
+$\overline{AB}$ et défini par : $\overline{AB}=x_{B}-x_{A}$ 
+\subsection*{\underline{\textcolor{red}{\textbf{Exemple}}}}
+Soit $(\mathfrak{D})$ une droite  munie d'un repère $(O;\vec{i})$
+
+1)placer les points A,B,C,D et E de $(\mathfrak{D})$ tel que 
+
+$x_{A}=-1,5$; $x_{B}=3$; $x_{C}=1$; $x_{D}=-2$; $x_{D}=-1,5$ et $x_{E}=2,5$
+
+2)Calculer $\overline{AD}$; $\overline{DE}$; $\overline{CA}$; $\overline{DA}$; $\overline{BD}$
+
+3)Placer les points F et G tel que $\overline{DF}=-3$ et $\overline{GE}=3,5$
+\subsection*{\underline{\textcolor{red}{\textbf{d.Milieux d'un segment}}}}
+Soit $(\mathfrak{D})$ une droite munie d'un repère $(O,\vec{i})$
+
+Soit I le milieu de [AB] alors $x_{I}=\frac{x_{A}+x{B}}{2}$
+
+\subsection*{\underline{\textcolor{red}{\textbf{Exemple}}}}
+Soit $\mathfrak{D}(O;\vec{i})$ un repère et $A$ et $B$ deux points de $(\mathfrak{D})$ tel que $x_{A}=3$ et $x_{B}=-5$
+
+Déterminer l'abscisse du point $I$, milieu de $[AB]$
+\subsection*{\underline{\textcolor{red}{\textbf{e.Relation de Chasles}}}}
+Soit une droite $(\mathfrak{D})$ une droite munie d'un repère $(O,\vec{i})$.
+
+Pour tout point $A$ ; $B$ et $C$ de $(\mathfrak{D})$ 
+
+On a: $\overline{AB}+\overline{BC}=\overline{AC}$
+\subsection*{\underline{\textcolor{red}{\textbf{Preuve}}}}
+On sait que: \[
+    \begin{cases}
+        \overline{AB} &= x_{B}-x_{A} \\
+        \overline{BC} &= x_{C}-x_{B}
+    \end{cases}
+    \]
+alors $\overline{AB}+\overline{BC}=x_{B}-x_{A}+x_{C}-x_{B}$
+$=x_{C}-x_{A}$
+
+$\overline{AB}+\overline{BC}=\overline{AC}$
+\subsection*{\underline{\textcolor{red}{\textbf{Remarque}}}}
+\begin{itemize}
+    \item[$\ast $] $\overline{-AB}=\overline{BA}$
+    \item[$\ast $] $\overline{AB}=\left\lVert \overline{BA} \right\rVert $
+    \item[$\ast $] si $\overline{AB}=0$ alors $x_{A}=x_{B}$ ou A=B
+    \item[$\ast $] $AB=\overline{AB}=\overline{BA}$
+\end{itemize}
+\subsection*{\underline{\textcolor{red}{\textbf{2.Repère du plan}}}}
+\subsection*{\underline{\textcolor{red}{\textbf{a.Définition}}}}
+On appelle repère du plan, la donnée de deux repères de droites ayant la même origine et de base non colinéaires.
+
+Les repères $\mathfrak{D}(O,\vec{i})$ et $\Delta(O,\vec{i})$ forment un repère du plan noté: $(O;\vec{i};\vec{j})$
+
+avec le point O origine du repère et le couple de vecteur $(\vec{i};\vec{j})$ base de ce repère.
+
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{qqqqcc}{rgb}{0,0,0.8}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-7.82,-3.28) rectangle (9.22,5.68);
+\draw [line width=2pt,color=qqqqcc] (-4.04,4.02)-- (1.92,-0.42);
+\draw [line width=2pt,color=ffqqqq] (-3.94,-0.2)-- (1.86,3.84);
+\draw [->,line width=2pt] (-1.0642101207295147,1.8031363986642692) -- (-1.8331840565436535,2.375996176351312);
+\draw [->,line width=2pt] (-1.0642101207295147,1.8031363986642692) -- (-0.36352526740536684,2.2911996413245372);
+\begin{scriptsize}
+\draw[color=qqqqcc] (-1.76,3.05) node {$\Delta$};
+\draw[color=ffqqqq] (0.16,3.09) node {$D$};
+\draw [fill=uuuuuu] (-1.0642101207295147,1.8031363986642692) circle (2pt);
+\draw[color=uuuuuu] (-1.08,1.47) node {$O$};
+\draw[color=black] (-1.7,1.97) node {$j$};
+\draw[color=black] (-0.48,2.01) node {$i$};
+\end{scriptsize}
+\end{tikzpicture}
+
+Soit le repère du plan $(O;\vec{i};\vec{j})$ pour tout point M du plan, il existe un unique couple de nature $(x;y)$ tel que $\overrightarrow{OM}=x_{i}+x_{j}$
+\begin{itemize}
+    \item Les réels $x$ et $y$ sont appelés coordonnées du plan $M$ dans le repère $(O;\vec{i};\vec{j})$
+    \item Le réel $x$ est l'abscises de $M$ dans $(O;\vec{i};\vec{j})$ et se note: $x_{M}$.
+    \item Le réel $y$ est l'ordonné de M dans $(O;\vec{i};\vec{j})$ et se note par: $y_{M}$
+    
+    par conséquent: les coordonnées du point $M$ peuvent se noté par: $x_{M}; y_{M}$
+\end{itemize}
+\subsection*{\underline{\textcolor{red}{\textbf{Exemple}}}}
+Placer les points $A(-1,2)$, $B(3,2)$, $C   (0,4)$ dans le repère $(O;\vec{i};\vec{j})$
+
+\definecolor{qqqqcc}{rgb}{0,0,0.8}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-7.82,-3.28) rectangle (9.22,5.68);
+\draw [line width=2pt,color=qqqqcc] (-4.04,4.02)-- (1.92,-0.42);
+\draw [line width=2pt,color=ffqqqq] (-3.94,-0.2)-- (1.86,3.84);
+\draw [->,line width=2pt] (-1.0642101207295147,1.8031363986642692) -- (-1.8331840565436535,2.375996176351312);
+\draw [->,line width=2pt] (-1.0642101207295147,1.8031363986642692) -- (-0.36352526740536684,2.2911996413245372);
+\begin{scriptsize}
+\draw[color=qqqqcc] (-1.76,3.05) node {$\Delta$};
+\draw[color=ffqqqq] (0.16,3.09) node {$D$};
+\draw [fill=uuuuuu] (-1.0642101207295147,1.8031363986642692) circle (2pt);
+\draw[color=uuuuuu] (-1.08,1.47) node {$O$};
+\draw[color=black] (-1.7,1.97) node {$j$};
+\draw[color=black] (-0.48,2.01) node {$i$};
+\end{scriptsize}
+\end{tikzpicture}
+
+\subsection*{\underline{\textcolor{red}{\textbf{Solution}}}}
+\subsection*{\underline{\textcolor{red}{\textbf{c.Milieu d'un segment}}}}
+Soit $A(x_{A},y_{A})$ et $A(x_{B},y_{B})$ deux point du plan.\\
+Si $I$ est milieu [AB] alors on a:\\
+$x_{I}=\frac{x_{A}+x_{B}}{2}$ et $y_{I}=\frac{y_{A}+y_{B}}{2}$
+\section*{\underline{\textcolor{red}{\textbf{Reperage et changement de base}}}}
+\subsection*{\underline{\textcolor{red}{\textbf{Activité}}}}
+Soit ABC un triangle, I milieu de $[BC]$ et M un point défini par : 
+$\overrightarrow{AM}=\frac{2}{5}\overrightarrow{AI}$.
+
+La parallèle à (AB) passant par M coupe (BC) en P et la parallèle à (AC) passant par M coupe (BC) en Q. On veut montrer que I est le milieu de [PQ]. Soit le repère $(A\;;\ \overrightarrow{AB}\;,\ \overrightarrow{AC}).$
+
+1) Déterminer les coordonnées de $A\;,\ B\;,\ C\ $ et $\ M.$
+
+2) Vérifier que l'ordonnée de $P$ est $\dfrac{1}{5}.$
+
+3) Soit $x$ l'abscisse de $P$, donner les coordonnées de $\overrightarrow{BP}$ en fonction de $x$. Calculer $x.$
+
+Déterminer les coordonnées de $Q$ puis montrer que $I$ est milieu de $[PQ].$
+\subsection*{\underline{\textcolor{red}{\textbf{Correction}}}}
+
+1) Soit le repère $(A\;;\ \overrightarrow{AB}\;,\ \overrightarrow{AC})$ donc, $A\begin{pmatrix} 0 \\ 0\end{pmatrix}\;,\quad B\begin{pmatrix} 1 \\ 0\end{pmatrix}$ et $C\begin{pmatrix} 0 \\ 1\end{pmatrix}$
+
+$\begin{array}{rcl}\overrightarrow{AM}&=&\dfrac{2}{5}\overrightarrow{AI}=\dfrac{2}{5}(\overrightarrow{AB}+\overrightarrow{BI}) \\ \\ &=&\dfrac{2}{5}\left(\overrightarrow{AB}+\dfrac{1}{2}\overrightarrow{BC}\right)\\ \\ &=&\dfrac{2}{5}\left(\overrightarrow{AB}+\dfrac{1}{2}\left(\overrightarrow{BA}+\overrightarrow{AC}\right)\right)\\ \\ &=&\dfrac{2}{5}\left(\overrightarrow{AB}-\dfrac{1}{2}\overrightarrow{AB}+\dfrac{1}{2}\overrightarrow{AC}\right)\\ \\ &=&\dfrac{2}{5}\left(\dfrac{1}{2}\overrightarrow{AB}+\dfrac{1}{2}\overrightarrow{AC}\right)\\ \\ &=&\dfrac{1}{5}\overrightarrow{AB}+\dfrac{1}{5}\overrightarrow{AC}\end{array}$
+
+D'où, $M\begin{pmatrix}\dfrac{1}{5} \\ \\ \dfrac{1}{5}\end{pmatrix}$
+
+2) $(MP)$ parallèle à $(AB)$ qui est l'axe des abscisses donc $M$ et $P$ ont la même ordonnée. D'où : $y_{P}=\dfrac{1}{5}.$
+3) $x_{P}=x$ donc, $P\begin{pmatrix} x \\ \dfrac{1}{5}\end{pmatrix}$ et $\overrightarrow{BP}\begin{pmatrix} x-1 \\ \dfrac{1}{5}\end{pmatrix}$
+
+$\overrightarrow{BP}$ est colinéaire à $\overrightarrow{BC}$, donc $B\;,\ P$ et $C$ sont alignés.
+
+Soit $\overrightarrow{BC}\begin{pmatrix} -1 \\ 1\end{pmatrix}$ alors on a : $$\begin{array}{rcl} (x-1)(1)-\left(\dfrac{1}{5}\right)(-1)=0&\Leftrightarrow&x-1+\dfrac{1}{5}=0\\\\&\Leftrightarrow&x=1-\dfrac{1}{5}\\ \\&\Leftrightarrow&x=\dfrac{4}{5}\end{array}$$
+
+D'où  : $P\begin{pmatrix}\dfrac{4}{5} \\ \\ \dfrac{1}{5}\end{pmatrix}$
+
+$(MQ)$ parallèle à $(AC)$ qui est l'axe des ordonnées donc $Q$ a même abscisse que $M.$ D'où : $x_{Q}=\dfrac{1}{5}.$
+
+Soit $Q\begin{pmatrix}\dfrac{1}{5} \\ y_{Q}\end{pmatrix}$ et $\overrightarrow{CQ}\begin{pmatrix}\dfrac{1}{5} \\ y_{Q}-1\end{pmatrix}$
+
+\begin{eqnarray}\overrightarrow{CQ}\text{ colinéaire à }\overrightarrow{BC}&\Leftrightarrow&\left(\dfrac{1}{5}\right)(1)-(y_{Q}-1)(-1)=0\nonumber\\ \\ &\Leftrightarrow&\dfrac{1}{5}+y_{Q}-1=0\nonumber\\ \\ &\Leftrightarrow&y_{Q}=1-\dfrac{1}{5}=\dfrac{4}{5}\nonumber \end{eqnarray}
+
+D'où  : $Q\begin{pmatrix}\dfrac{1}{5} \\ \\ \dfrac{4}{5}\end{pmatrix}$
+
+$I$ est milieu de $[BC]$ alors $I\begin{pmatrix}\dfrac{1}{2} \\ \\ \dfrac{1}{2}\end{pmatrix}$
+
+Calculons les coordonnées du milieu de $[PQ]$
+
+Soit $$\begin{array}{ccc}\dfrac{x_{P}+x_{Q}}{2}&=&\dfrac{\left(\dfrac{4}{5}+\dfrac{1}{5}\right)}{2} \\ \\ &=&\dfrac{1}{2}\ =\ x_{I} \end{array}\quad\text{et}\quad\begin{array}{ccc}\dfrac{y_{P}+y_{Q}}{2}&=&\dfrac{\left(\dfrac{1}{5}+\dfrac{4}{5}\right)}{2} \\ \\ &=&\dfrac{1}{2}\ =\ y_{I} \end{array}$$
+
+3) $x_{P}=x$ donc, $P\begin{pmatrix} x \\ \dfrac{1}{5}\end{pmatrix}$ et $\overrightarrow{BP}\begin{pmatrix} x-1 \\ \dfrac{1}{5}\end{pmatrix}$
+
+$\overrightarrow{BP}$ est colinéaire à $\overrightarrow{BC}$, donc $B\;,\ P$ et $C$ sont alignés.
+
+Soit $\overrightarrow{BC}\begin{pmatrix} -1 \\ 1\end{pmatrix}$ alors on a : $$\begin{array}{rcl} (x-1)(1)-\left(\dfrac{1}{5}\right)(-1)=0&\Leftrightarrow&x-1+\dfrac{1}{5}=0\\\\&\Leftrightarrow&x=1-\dfrac{1}{5}\\ \\&\Leftrightarrow&x=\dfrac{4}{5}\end{array}$$
+
+D'où  : $P\begin{pmatrix}\dfrac{4}{5} \\ \\ \dfrac{1}{5}\end{pmatrix}$
+
+$(MQ)$ parallèle à $(AC)$ qui est l'axe des ordonnées donc $Q$ a même abscisse que $M.$ D'où : $x_{Q}=\dfrac{1}{5}.$
+
+Soit $Q\begin{pmatrix}\dfrac{1}{5} \\ y_{Q}\end{pmatrix}$ et $\overrightarrow{CQ}\begin{pmatrix}\dfrac{1}{5} \\ y_{Q}-1\end{pmatrix}$
+
+\begin{eqnarray}\overrightarrow{CQ}\text{ colinéaire à }\overrightarrow{BC}&\Leftrightarrow&\left(\dfrac{1}{5}\right)(1)-(y_{Q}-1)(-1)=0\nonumber\\ \\ &\Leftrightarrow&\dfrac{1}{5}+y_{Q}-1=0\nonumber\\ \\ &\Leftrightarrow&y_{Q}=1-\dfrac{1}{5}=\dfrac{4}{5}\nonumber \end{eqnarray}
+D'où  : $Q\begin{pmatrix}\dfrac{1}{5} \\ \\ \dfrac{4}{5}\end{pmatrix}$
+$I$ est milieu de $[BC]$ alors $I\begin{pmatrix}\dfrac{1}{2} \\ \\ \dfrac{1}{2}\end{pmatrix}$
+
+Calculons les coordonnées du milieu de $[PQ]$
+
+Soit $$\begin{array}{ccc}\dfrac{x_{P}+x_{Q}}{2}&=&\dfrac{\left(\dfrac{4}{5}+\dfrac{1}{5}\right)}{2} \\ \\ &=&\dfrac{1}{2}\ =\ x_{I} \end{array}\quad\text{et}\quad\begin{array}{ccc}\dfrac{y_{P}+y_{Q}}{2}&=&\dfrac{\left(\dfrac{1}{5}+\dfrac{4}{5}\right)}{2} \\ \\ &=&\dfrac{1}{2}\ =\ y_{I} \end{array}$$
+
+Donc $I$ est aussi milieu de $[PQ]$
+\subsection*{\underline{\textcolor{red}{\textbf{I. Définitions}}}}
+Soient deux vecteurs non nuls $\vec{u}$ et $\vec{v}$ et non colinéaires, $A$ un point du plan. Le triplet $(A;\ \vec{u},\ \vec{v})$ est un repère du plan où $A$ est l'origine et $\vec{u}$ et $\vec{v}$ sont les vecteurs de base du plan.
+
+$\centerdot$ $\forall\;$ $M\in\mathcal{P}$ $\exists\;$ $x$ et $y$ tels que $\overrightarrow{AM}=x\vec{u}+y\vec{v}$
+
+$x$ et $y$ sont les coordonnées de $M$. $\ x$ est l'abscisse de $M\;$; $\ x_{M}=x$, $\ y$ est l'ordonnée de $M\;$; $y_{M}=y$
+
+$\centerdot\ \ $ Si $\vec{u}$ est orthogonal à $\vec{v}\ $ ($\vec{u}\perp\vec{v}$) on dira que le repère $(A;\ \vec{u},\ \vec{v})$ est un repère orthogonal.
+
+$\centerdot\ \ $ Si de plus $||\vec{u}||=||\vec{v}||=1$ on dira qu'on a un repère orthonormé.
+
+$\centerdot\ \ (A;\ \vec{u})$ est l'axe des abscisses, $(A;\ \vec{v})$ est l'axe des ordonnées.
+\subsection*{\underline{\textcolor{red}{\textbf{II. Équations cartésiennes et paramétriques de droite}}}}
+\subsection*{\underline{\textcolor{red}{\textbf{1. Colinéarité de vecteurs}}}}
+$\centerdot\ \ $ Deux vecteurs $\vec{u}\begin{pmatrix}
+x\\
+y
+\end{pmatrix}$ et $\vec{v}\begin{pmatrix}
+x'\\
+y'
+\end{pmatrix}$ sont colinéaires si, et seulement si, le déterminant de $\vec{u}$ et $\vec{v}$ noté $$det(\vec{u},\ \vec{v})=\begin{vmatrix}
+x & x'\\
+	y & y'
+	\end{vmatrix}=xy'-x'y=0$$
+	$\centerdot\ \ $ Deux vecteurs $\vec{u}$ et $\vec{v}$ sont colinéaires si, et seulement si, il existe $k\in\mathbb{R}$ tel que $\vec{u}=k.\vec{v}$
+	
+$\vec{u}$ et $\vec{v}$ ont même direction.
+\subsection*{\underline{\textcolor{red}{\textbf{2. Vecteurs orthogonaux}}}}
+	$\centerdot\ \ $ Deux vecteurs $\vec{u}$ et $\vec{v}$ sont orthogonaux si, et seulement si, ils ont des directions orthogonales. On note $\vec{u}\perp\vec{v}$.
+	$\centerdot\ \ $ Deux vecteurs $\vec{u}\begin{pmatrix}
+	x\\
+	y
+	\end{pmatrix}$ et $\vec{v}\begin{pmatrix}
+	x'\\
+	y'
+	\end{pmatrix}$ sont orthogonaux si, et seulement si, $$xx'+yy'=0$$
+\subsection*{\underline{\textcolor{red}{\textbf{3.1 Définitions}}}}	
+Soient $\vec{u}$ un vecteur non nul, $A$ un point du plan. L'ensemble des points $M$ du plan tels que $\overrightarrow{AM}$ colinéaire à $\vec{u}$ est la droite passant par $A$ de direction $\vec{u}$ noté $(D)=(A,\ \vec{u}).$
+$\vec{u}$ est un vecteur directeur de $(D)$ et tout vecteur $\vec{v}$ colinéaire à $\vec{u}$ est aussi un vecteur directeur de $(D).$
+\subsection*{\underline{\textcolor{red}{\textbf{3.2 Équation cartésienne et réduite d'une droite}}}}
+L'équation cartésienne d'une droite $(D)$ est de la forme $$ax+by+c=0$$ avec $(a,\ b)\neq(0,\ 0)\;$; $\ a$ et $b$ ne sont pas nuls en même temps.
+	$\centerdot\ \ $ Le vecteur $\vec{u}\begin{pmatrix}
+	-b\\
+	a
+	\end{pmatrix}$ est un vecteur directeur de $(D)$.
+	
+	$\centerdot\ \ $ Le vecteur $\vec{n}\begin{pmatrix}
+	a\\
+	b
+	\end{pmatrix}$ est appelé un vecteur normal à $(D)$. C'est un vecteur orthogonal à la direction de $(D)$.
+	
+	$\centerdot\ \ $ Si $a=0$ alors, la droite $(D)$ a pour équation $y=\dfrac{-c}{b}$ et est parallèle à l'axe des abscisses.
+	
+	$\centerdot\ \ $ Si $b=0$ alors, la droite $(D)$ a pour équation $y=\dfrac{-c}{a}$ et est parallèle à l'axe des ordonnées.
+\subsection*{\underline{\textcolor{red}{\textbf{Exercice d'application}}}}
+Soit $A\begin{pmatrix} 2 \\ 5\end{pmatrix}\;,\quad B\begin{pmatrix} 3 \\ -4\end{pmatrix}\;,\quad C\begin{pmatrix} 1 \\ 7\end{pmatrix}$
+
+Déterminer les équations cartésiennes de :
+
+1) $(AB)$
+
+2) la droite $(D)$ passant par $C$ et parallèle à $(AB)$
+
+3) la médiatrice de $[AC]$
+
+
+\subsection*{\underline{\textcolor{red}{\textbf{Résolution}}}}
+1) Équation cartésienne de $(AB)$ :
+
+Nous avons : $A\begin{pmatrix} 3-2 \\ -4-5\end{pmatrix}=\begin{pmatrix} 1 \\ -9\end{pmatrix}$
+
+Soit $M\begin{pmatrix} x \\ y\end{pmatrix}\in(AB)\;;\quad \overrightarrow{AM}\begin{pmatrix} x-2 \\ y-5\end{pmatrix}$
+
+$$\begin{array}{rcl} M\begin{pmatrix} x \\ y\end{pmatrix}\in(AB)&\Leftrightarrow&\overrightarrow{AB}\ \text{ colinéaire à }\ \overrightarrow{AM} \\ \\ &\Leftrightarrow&det(\overrightarrow{AM}\;,\ \overrightarrow{AB})=0\\ \\ &\Leftrightarrow&\begin{vmatrix} x-2&1 \\ y-5&-9\end{vmatrix}=(x-2)(-9)-(y-5)=0\\ \\ &\Leftrightarrow&-9x-y+23=0\end{array}$$
+
+Donc, $(AB)\ :\ -9x-y+23=0$
+
+2) Soit $M\begin{pmatrix} x \\ y\end{pmatrix}\in(D)\;;\quad \overrightarrow{CM}\begin{pmatrix} x-1 \\ y-7\end{pmatrix}$
+
+$$\begin{array}{rcl} (D)\ \text{ parallèle à }\ (AB)&\Leftrightarrow&\overrightarrow{AB}\ \text{ colinéaire à }\ \overrightarrow{CM} \\ \\ &\Leftrightarrow&det(\overrightarrow{AB}\;,\ \overrightarrow{CM})=0\\ \\ &\Leftrightarrow&\begin{vmatrix} 1&x-1 \\ -9&y-7\end{vmatrix}=(y-7)-(-9)(x-1)=0\\ \\ &\Leftrightarrow&y+9x-7-9=0 \end{array}$$
+
+D'où, $(D)\ :\ y+9x-16=0$
+
+3) Soit $(\Delta)$ la médiatrice de $[AC]$ donc $\overrightarrow{AC}\begin{pmatrix} -1 \\ 2\end{pmatrix}$ est un vecteur normal à $(\Delta).$
+
+Soit $I$ milieu de $[AC]\;;\quad I\begin{pmatrix}\dfrac{3}{2} \\ \\ 6\end{pmatrix}$ et soit $M\begin{pmatrix} x \\ y\end{pmatrix}\in(\Delta)\;;\quad \overrightarrow{IM}\begin{pmatrix} x-\dfrac{3}{2} \\ \\ y-6\end{pmatrix}$
+
+$$\begin{array}{rcl} (\Delta)\ \text{ perpendiculaire à }\ (AC)&\Leftrightarrow&(-1)\left(x-\dfrac{3}{2}\right)+2(y-6)=0 \\ \\ &\Leftrightarrow&-x+\dfrac{3}{2}+2y-12=0\\ \\ &\Leftrightarrow&-x+2y-\dfrac{21}{2}=0\end{array}$$
+
+Donc, $\Delta\ :\ -x+2y-\dfrac{21}{2}=0$
+\subsection*{\underline{\textcolor{red}{\textbf{Remarques}}}}
+L'équation réduite d'une droite $(D)$ est de la forme $y=\alpha x+\beta$ où $\alpha$ est le coefficient directeur de la droite $(D)$. Donc si $(D) \: : y=\alpha x+\beta \: \Longrightarrow \: \alpha x-y+\beta=0$ et $\vec{u}\begin{pmatrix} 1\\ \alpha \end{pmatrix}$ est un vecteur directeur de $(D).$
+
+Soit $(D) \: : ax+by+c=0$, si $b\neq 0 \: \Rightarrow \: y=\dfrac{-a}{b}x-\dfrac{c}{b}$ et $\dfrac{-a}{b}$ est le coefficient directeur de la droite $(D).$
+\subsection*{\underline{\textcolor{red}{\textbf{3.3 Conditions de parallélisme et d'orthogonalité de droites}}}}
+$\centerdot\ \ $ Deux droites $(D) \: : ax+by+c=0$ de vecteur directeur $\vec{u}\begin{pmatrix} -b\\ a \end{pmatrix}$ et $(D') \: : a'x+b'y+c'=0$ de vecteur directeur $\vec{u}'\begin{pmatrix} -b'\\ a' \end{pmatrix}$ sont parallèles si, et seulement si, les vecteurs directeurs $\vec{u}$ et $\vec{u}'$ sont colinéaires ($det(\vec{u},\ \vec{u}')=0$)
+
+$\centerdot\ \ (D)$ et $(D')$ sont orthogonales si, et seulement si, les vecteurs directeurs $\vec{u}$ et $\vec{u}'$ sont orthogonaux ($x_{\vec{u}}x'_{\vec{u}'}+y_{\vec{u}}y'_{\vec{u}'}=0$)
+
+$\centerdot$ Deux droites $(D) \: : y=\alpha x+\beta$ et $(D') \: : y=\alpha' x+\beta'$ sont parallèles si, et seulement si, $$\alpha=\alpha'$$
+
+$\centerdot\ \ (D)$ et $(D')$ sont perpendiculaires si, et seulement si, $$\alpha.\alpha'=-1$$
+\subsection*{\underline{\textcolor{red}{\textbf{Exercice d'application}}}}
+Soit $(D_{1})\ :\ 2x-3y+5=0$ et $A\begin{pmatrix} 3 \\ 4\end{pmatrix}\;,\quad B\begin{pmatrix} 2 \\ 3\end{pmatrix}$ deux points du plan.
+
+1) $A$ et $B$ appartiennent-ils à $(D_{1})$ ?
+
+2) Déterminer l'équation de la droite $(D_{2})$ passant par $A$ et parallèle à $(D_{1}).$
+
+3) Soit $(D_{3})\ :\ y=3x-1$
+
+$(D_{3})$ et $(D_{1})$ sont-elles parallèles ? perpendiculaires ?
+\end{document}
