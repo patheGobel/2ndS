@@ -108,24 +108,152 @@ $\ast$\underline{\textbf{\textcolor{red}{Exemple}}}\\
 Soit l'équation $ax^{2}+bx+c=0$ et $b=2b'$ donc $\Delta'=b'^{2}-ac$
 $\Delta'$ est appelé discriminant réduit.
 \begin{itemize}
-    \item Si $Delta' >0$ alors on aura 2 racines distinctes $x_{1}$ et $x_{2}$ tels que:
+    \item Si $\Delta' >0$ alors l'équation a 2 racines distinctes $x_{1}$ et $x_{2}$ tels que:
             \[x_{1}=\frac{-b'-\sqrt{\Delta'}}{a}\] et \[x_{2}=\frac{-b'+\sqrt{\Delta'}}{a}\]
             Ainsi $S=\left\lbrace \frac{-b'-\sqrt{\Delta'}}{a}, \frac{-b'+\sqrt{\Delta'}}{a} \right\rbrace$
+     \item Si $\Delta' =0$ alors l'équation a une racine double $x_{0}$ tels que:
+            \[x_{0}=\frac{-b'}{a}\]
+            Ainsi $S=\left\lbrace \frac{-b'}{a} \right\rbrace$
+      \item Si $\Delta' <0$ alors l'équation n'admet pas de solution
+            Ainsi $S=\emptyset$
         \end{itemize}
 $\ast$\underline{\textbf{\textcolor{red}{Exemple}}}\\
 \subsection*{\underline{\textbf{\textcolor{red}{Théorème3}}}}
+Soit l'équation $ax^{2}+bx+c=0$ et $a+b+c=0$ alors l'équation admet deux solutions $x_{1}$ et $x_{2}$ tel que $x_{1}=1$ et $x_{2}=\frac{c}{a}$
+
+Ainsi, $S=\left\lbrace 1; \frac{c}{a} \right\rbrace $
+
 $\ast$\underline{\textbf{\textcolor{red}{Exemple}}}\\
+Redoudre dans $\mathbb{R}$
+
+$x^{2}-5x+4=0$ ; $2x^{2}+4x+2=0$ ; $x^{2}+x+5=0$ ; $4x^{2}+4x+1=0$
 \subsection*{\underline{\textbf{\textcolor{red}{2.Somme et Produit des Racines}}}}
 Soit $x_{1}$;$x_{2}$ les racines de l'équation $ax^{2}+bx+c=0$\\
 $\ast$\underline{\textbf{\textcolor{red}{Somme}}}\\
+En notant la somme des racines $S$ c'est-à-dire $S=x_{1}+x_{2}$
+
+On a: $S=\frac{-b-\sqrt{\Delta}}{2a}+\frac{-b+\sqrt{\Delta}}{2a}$
+
+	\textbf{\textcolor{red}{$S=\frac{-b}{a}$}}
+	
 $\ast$\underline{\textbf{\textcolor{red}{Exemple}}}\\
 $\ast$\underline{\textbf{\textcolor{red}{Produit}}}\\
+En notant le produit des racines $P$ c'est-à-dire $P=x_{1}\times x_{2}$
+
+On a: $P=\frac{-b-\sqrt{\Delta}}{2a}\times \frac{-b+\sqrt{\Delta}}{2a}$
+
+	\textbf{\textcolor{red}{$P=\frac{c}{a}$}}
+	
 $\ast$\underline{\textbf{\textcolor{red}{Exemple}}}\\
+Soit le trinôme du $2^{nd}$ degré = $p(x)=x^{2}-5x+2$
+
+Sans calculer $x_{1}$ et $x_{2}$, calculer $x_{1}+x_{2}$ ; $x_{1}\times x_{2}$ ; 
+$x_{1}^{2}+x_{2}^{2}$ ; $\frac{1}{x_{1}}+\frac{1}{x_{2}}$ ; $x_{1}^{3}+x_{2}^{3}$
 \subsection*{\underline{\textbf{\textcolor{red}{3.Equation se ramenant à une équation du second degré}}}}
 $\ast$\underline{\textbf{\textcolor{red}{Equation du type $ax^{4}+bx^{2}+c=0$}}}\\
+Pour résoudre ce type d'équation, on pose $t=x^{2}$ et $t^{2}=x^{4}$
+
+Donc ça revient a résoudre : $at^{2}+bt+c=0$
+
 $\ast$\underline{\textbf{\textcolor{red}{Exemple}}}\\
+Résolver $x^{4}-5x^{2}+4=0$
+
+$\ast$\underline{\textbf{\textcolor{red}{Solution}}}\\
+En posant $t=x^{2}$ et $t^{2}=x^{4}$ on a:
+
+$t^{2}-5x+4=0$ en remarquand que $a+b+c=1-5+4=0$ donc ...
+
 $\ast$\underline{\textbf{\textcolor{red}{Equation du type $ax^{2}+b|x|+c=0$}}}\\
+$ax^{2}+b|x|+c=0$ or $x^{2}=|x|^{2}$
+
+Donc $ax^{2}+b|x|+c=0 \Leftrightarrow a|x|^{2}+b|x|+c=0$
+
+En posant $t=|x|$ et $t^{2}=|x|^{2}$
+
+On aura $at^{2}+bt+c=0$
+
 $\ast$\underline{\textbf{\textcolor{red}{Exemple}}}\\
+Résolvez dans $\mathbb{R}$\\
+$x^{2}-3|x|+2=0$
+$\ast$\underline{\textbf{\textcolor{red}{Remarque}}}\\
+Pour l'équation du type $ax+b\sqrt{x}+c$
+
+On pose $t=\sqrt{x}$ et $t^{2}=x$
 \section*{\underline{\textbf{\textcolor{red}{III.Inequation du second degré}}}}
-\subsection*{\underline{\textbf{\textcolor{red}{Théorème3}}}}
+\subsection*{\underline{\textbf{\textcolor{red}{Théorème:}}}}
+Soit le trinôme du second degré $p(x)=ax^{2}+bx+c$ et $\Delta=b^{2}-4ac$
+\begin{itemize}
+\item[*] Si $\Delta >0$ alors on aura deux solutions distinctes $x_{1}$ et $x_{2}$ avec $x_{1} < x_{2}$
+
+\textbf{Dessin}
+
+\item[*] Si $\Delta =0$ on a une solution double $x_{0}$
+
+\textbf{Dessin}
+
+\item[*] Si $\Delta <0$ pas de solutions
+\end{itemize}
+\section*{\underline{\textbf{\textcolor{red}{V.Equation paramétrique}}}}
+\subsection*{\underline{\textbf{\textcolor{red}{Propriété:}}}}
+Soit l'équation du second degré : 
+
+$ax^{2}+bx+c=0$ , si $\Delta \geq 0$ alors les solutions $x_{1}$ et $x_{2}$ de singe $S$ et de $P$.
+\begin{itemize}
+\item[*] Si $P < 0$ alors les solutions $x_{1}$ et $x_{2}$ sont de singes \textcolor{red}{contraires}
+\item[*] Si $P>0$ et $S>0$ alors les solutions $x_{1}$ et $x_{2}$ sont  \textcolor{red}{positives}
+\item[*] Si $P>0$ et $S<0$ alors les solutions $x_{1}$ et $x_{2}$ sont  \textcolor{red}{négatives}
+\item[*] Si $S=0$ alors les solutions $x_{1}$ et $x_{2}$ sont  \textcolor{red}{opposées}
+\item[*] Si $P=0$  alors $x_{1}=0$ et $x_{2}=S$
+\item[*] Si $P=0$ et $S=0$ alors  $x_{1}=x_{2}=0$
+\end{itemize}
+\subsection*{\underline{\textbf{\textcolor{red}{Exemple:}}}}
+Dans chacun des cas suivants étudier suivant les valeurs du paramètre réel m, l'existance et le signe des racines des équations:
+
+a)
+$6x^{2}+5(m-1)x+(m-1)^{2}=0$
+
+b)$(m-2)x^{2}-2(m-5)x+m+2=0$
+\subsection*{\underline{\textbf{\textcolor{red}{Solution:}}}}
+a)
+$6x^{2}+5(m-1)x+(m-1)^{2}=0$
+
+$a=6$ , $b=5(m-1)$ , $c=(m-1)^{2}$
+
+Comme $a=6\neq 0$ alors on a une équation du second degré.
+
+\textcolor{red}{Calculons $\Delta$:}
+
+$\Delta=$
+
+\textcolor{red}{Etudions le signe de $\Delta$:}
+
+\textcolor{red}{Calculons $P$ :}
+
+\textcolor{red}{Calculons $P$ :}
+
+\textcolor{red}{Tableau récapitulatif}
+
+b)$(m-2)x^{2}-2(m-5)x+m+2=0$
+
+$a=(m-2)$ , $b=-2(m-5)$ , $c=m+2$
+
+pour $a=0$, $(m-2) \Leftrightarrow m=2$.
+
+L'équation devient $6x+4=0$\\
+.
+.
+.
+
+pour $a\neq 0$
+\textcolor{red}{Calculons $\Delta$:}
+
+$\Delta=$
+
+\textcolor{red}{Etudions le signe de $\Delta$:}
+
+\textcolor{red}{Calculons $P$ :}
+
+\textcolor{red}{Calculons $P$ :}
+
+\textcolor{red}{Tableau récapitulatif}
 \end{document}
